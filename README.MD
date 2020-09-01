@@ -2,6 +2,12 @@
 
 This is a sample REST api made in Rust
 
+## Local deployment
+The recomended way to use this api in local development is using docker, there is a docker-compose  file available
+```
+docker-compose up -d
+```
+
 ## Usage
 
 All the CRUD operations are available in the endpoint **/api/todos**.  
