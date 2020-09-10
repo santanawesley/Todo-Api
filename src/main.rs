@@ -43,8 +43,6 @@ async fn main() -> std::io::Result<()> {
             .service(web::scope("/api")
                 .configure(models::router)
                 .wrap(Cors::new()
-                    .allowed_origin("All")
-                    .send_wildcard()
                     .max_age(3600)
                     .finish())
             )
